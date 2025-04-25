@@ -15,6 +15,7 @@ package root
 
 import (
 	"fmt"
+	"github.com/goharbor/harbor-cli/cmd/harbor/root/context"
 	"io"
 	"time"
 
@@ -112,6 +113,7 @@ harbor help
 		webhook.Webhook(),
 		instance.Instance(),
 		quota.Quota(),
+		context.Context(),
 	)
 
 	return root
