@@ -97,7 +97,6 @@ harbor help
 	root.AddCommand(
 		versionCommand(),
 		LoginCommand(),
-		config.Config(),
 		HealthCommand(),
 		project.Project(),
 		registry.Registry(),
